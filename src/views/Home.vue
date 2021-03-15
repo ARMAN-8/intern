@@ -6,6 +6,7 @@
                 <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-content-center my-8">
                     <div class="text-white">
                         <div class="text-4xl font-extrabold">
+                            home
                             {{ main.title }}
                         </div>
                         <div class="mt-8">
