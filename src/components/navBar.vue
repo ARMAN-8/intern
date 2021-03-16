@@ -5,8 +5,11 @@
                 <div class="relative flex items-center justify-between h-16">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <!-- Mobile menu button-->
-                        <button id="mMenu" v-on:click="mobileMenu()" type="button"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+
+                        <!-- v-on:click="mobileMenu()" -->
+                        <button id="mMenu" type="button"
+                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <!--
                               Icon when menu is closed.
@@ -32,14 +35,18 @@
                     </div>
                     <div class="flex-1 flex items-center justify-between sm:items-stretch sm:justify-start">
                         <div class="flex-shrink-0 flex items-center">
-                            <img class="hidden lg:block h-8 w-auto" src="/src/assets/itest.png" alt="iTest">
+                            <router-link to="/">
+                                <img class="hidden lg:block h-8 w-auto" src="../assets/i_test_logo.png" alt="iTest">
+                            </router-link>
                         </div>
                     </div>
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-4">
-                            <button class="outlineBtn mx-2">
-                                {{ signIn }}
-                            </button>
+                            <router-link to="/block">
+                                <button class="outlineBtn mx-2">
+                                    {{ signIn }}
+                                </button>
+                            </router-link>
                             <button class="outlineBtn mx-2">
                                 {{ registration }}
                             </button>
@@ -64,7 +71,7 @@
 </template>
 <script>
     export default {
-        name: 'NavBar',
+        name: 'navBar',
         data(){
             return{
                 signIn: 'Войти',
@@ -73,20 +80,16 @@
         },
         methods: {
             mobileMenu: function () {
-                alert('nfrjke');
+                /*alert('nfrjke');*/
             }
         },
     }
-    /*let mMenu = document.getElementById('mMenu');
-    mMenu.addEventListener('click', () => {
-        if (!mMenu)
-    })*/
 </script>
 <style>
     .bor {
         @apply border border-red-800
     }
     .outlineBtn {
-        @apply px-12 py-2  focus:outline-none border border-white rounded-full text-white
+        @apply px-12 py-2  focus:outline-none border border-black rounded-full
     }
 </style>
