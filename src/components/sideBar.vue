@@ -1,7 +1,7 @@
 <template>
     <div class="fixed">
-        <div class="sideBar min-h-screen">
-            <div>
+        <div class="sideBar z-10">
+            <div class=" min-h-screen lg:w-80 md:w-0 sm:w-0">
                 <div class="flex items-center justify-center py-8">
                     <img src="../assets/INTERN-TEST.png" alt="">
                 </div>
@@ -59,7 +59,6 @@
 </script>
 <style>
     .sideBar {
-        width: 300px;
         background: rgba(255, 204, 0, 1);
     }
     .sideBarText {

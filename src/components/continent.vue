@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="lg:ml-80 md:ml-72 my-8 mx-8 px-8">
+        <div class="lg:ml-80 md:ml-0 my-8 lg:mx-8 md:mx-8 sm:mx-2 lg:px-8 md:px-4 sm:px-2">
             <mainContent/>
         </div>
     </div>

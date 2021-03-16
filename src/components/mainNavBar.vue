@@ -1,13 +1,21 @@
 <template>
     <div>
         <div class="bg-gray-200 w-full p-2">
-            <div class="lg:ml-80 md:ml-72 px-4">
+            <div class="lg:ml-80 md:ml-0 px-4">
                 <div class="flex justify-between p-4">
+                    <div class="absolute left-0 flex items-center md:hidden sm:hidden z-0">
+                        <!-- Mobile menu button-->
+                        <button class="ml-2 mt-2 focus:outline-none bars">
+                            <img src="../assets/bar.png" alt="">
+                        </button>
+                    </div>
                     <div>
-                        <span class="text-2xl font-bold">
+                        <router-link to="/NotFound">
+                            <span class="text-2xl font-bold">
                             {{ content.title }}
                         </span>
-                        <p class="font-medium mt-4">
+                        </router-link>
+                        <p class="font-medium mt-4 sm:hidden">
                             {{ content.description }}
                         </p>
                     </div>
@@ -34,4 +42,8 @@
             }
         }
     }
+    /*
+    let bars = document.querySelector('.bars');
+    bars.style.backgroundColor = 'red';
+    */
 </script>
