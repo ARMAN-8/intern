@@ -82,7 +82,6 @@ module.exports = {
       'gradient-to-bl': 'linear-gradient(to bottom left, var(--tw-gradient-stops))',
       'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
       'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
-      'bg-bubbles': 'url("../assets/main-bg.png")',
     },
     backgroundOpacity: (theme) => theme('opacity'),
     backgroundPosition: {
