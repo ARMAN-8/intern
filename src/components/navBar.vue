@@ -2,12 +2,12 @@
     <div>
         <nav class="">
             <div class="">
-                <div class="relative flex items-center justify-between h-16">
+                <div class="relative flex items-center justify-between sm:h-8 md:h-20 lg:h-20">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <!-- Mobile menu button-->
                         <!-- v-on:click="mobileMenu()" -->
                         <button id="mMenu" type="button"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                class="hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                                 aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <!--
@@ -35,7 +35,7 @@
                     <div class="flex-1 flex items-center justify-between sm:items-stretch sm:justify-start">
                         <div class="flex-shrink-0 flex items-center">
                             <router-link to="/">
-                                <img class="hidden lg:block h-8 w-auto" src="../assets/i_test_logo.png" alt="iTest">
+                                <img class="hidden lg:block md:block sm:block h-8 w-auto" src="../assets/i_test_logo.png" alt="iTest">
                             </router-link>
                         </div>
                     </div>
@@ -56,11 +56,11 @@
 
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="sm:hidden" id="mobile-menu">
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                    <button class="outlineBtn mx-2">
+                <div class="flex justify-around">
+                    <button class="outlineBtnMobile mx-2">
                         {{ signIn }}
                     </button>
-                    <button class="outlineBtn mx-2">
+                    <button class="outlineBtnMobile mx-2">
                         {{ registration }}
                     </button>
                 </div>
@@ -89,6 +89,9 @@
         @apply border border-red-800
     }
     .outlineBtn {
-        @apply px-12 py-2  focus:outline-none border border-black rounded-full
+        @apply px-12 py-2 focus:outline-none border border-black hover:border-gray-600 hover:bg-gray-100 hover:text-black rounded-full font-bold
+    }
+    .outlineBtnMobile {
+        @apply px-4 focus:outline-none border border-black hover:border-white hover:bg-black hover:text-white rounded-full font-bold
     }
 </style>

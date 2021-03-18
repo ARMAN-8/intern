@@ -10,33 +10,31 @@
                         <img src="../assets/active.png" alt="">
                     </div>-->
                     <ul class="m-8">
-                        <li class="flex items-center m-8">
-                            <a href="#" class="sideBarText">
+                        <li class="sideBarMenu flex items-center m-8">
+                            <router-link  class="sideBarText" to="/test">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_1 }}</span>
-                            </a>
+                            </router-link>
                         </li>
-                        <li class="flex items-center m-8">
+                        <li class="sideBarMenu flex items-center m-8">
                             <a href="#" class="sideBarText">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_2 }}</span>
                             </a>
                         </li>
-                        <li class="flex items-center m-8">
-                            <a href="#" class="sideBarText">
+                        <li class="sideBarMenu flex items-center m-8">
+                            <router-link class="sideBarText" to="/account-settings">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_3 }}</span>
-                            </a>
+                            </router-link>
                         </li>
-                        <li class="flex items-center m-8">
+                        <li class="sideBarMenu flex items-center m-8">
                             <a href="#" class="sideBarText">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_4 }}</span>
                             </a>
                         </li>
                     </ul>
-                    <div class="">
-                    </div>
                 </div>
             </div>
         </div>
@@ -63,5 +61,8 @@
     }
     .sideBarText {
         @apply px-2 font-medium font-medium text-xl flex items-center justify-center my-4 hover:text-gray-400 focus:text-white
+    }
+    .sideBarMenu {
+        color: black;
     }
 </style>
