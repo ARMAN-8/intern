@@ -34,6 +34,11 @@ const routes = [
         name: 'results',
         component: () => import('../views/results')
     },
+    {
+        path: '/Completed',
+        name: 'Completed',
+        component: () => import('../views/Completed')
+    },
 ];
 
 const router = new VueRouter({

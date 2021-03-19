@@ -1,6 +1,6 @@
 <template>
     <div class="results m-2">
-        <div class="flex justify-between items-center px-8">
+        <div class="flex justify-between items-center px-8 my-8">
             <div>
                 <img src="../assets/i_test_logo.png" class="" alt="" style="width: 169px; height: 62px;">
             </div>
@@ -8,7 +8,7 @@
                 Назад
             </div>
         </div>
-        <div class="results bor text-2xl font-bold lg:mx-12 md:mx-10 sm:mx-0 lg:mt-36 md:mt-28 mt-12 p-4 space-y-6">
+        <div class="results text-2xl font-bold lg:mx-8 md:mx-8 sm:mx-0 lg:mt-36 md:mt-28 mt-12 space-y-12">
             <div class="card bg-white shadow-lg">
                 <div class="cardHeader bg-yellow-400 font-bold px-4 py-2 rounded-t-lg">
                     Результаты тестирования - Касымхан Али (23 года)
@@ -39,7 +39,7 @@
                     {{ shortDescription.baseTitle }}
                 </div>
                 <div class="cardContent font-medium p-6">
-                    <div class="grid grid-flow-col-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
+                    <div class="grid grid-flow-col-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-8">
                         <div class="card bg-white shadow-lg rounded-lg">
                             <div class="cardHeader bg-yellow-400 font-medium px-4 py-2 rounded-t-lg">
                                 {{ shortDescription.cardTitle__1.title }}
@@ -89,7 +89,7 @@
                     {{ explanationOFResults.baseTitle }}
                 </div>
                 <div class="cardContent font-medium p-6">
-                    <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
+                    <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-8">
                         <div class="card bg-white shadow-lg rounded-lg">
                             <div class="cardHeader bg-yellow-400 font-medium px-4 py-2 rounded-t-lg">
                                 {{ explanationOFResults.attention.cardAttention.title }} - {{ levels.middle }}
@@ -173,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-12 text-center">
+            <div class="my-24 py-8 text-center">
                 <a href="../assets/i_test_logo.png" class="font-bold" download="">
                     Скачать PDF
                 </a>
