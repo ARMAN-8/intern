@@ -29,10 +29,10 @@
                             </router-link>
                         </li>
                         <li class="sideBarMenu flex items-center m-8">
-                            <a href="#" class="sideBarText">
+                            <router-link class="sideBarText" to="/results">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_4 }}</span>
-                            </a>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
 <script>
     export default {
         name: 'sideBar',
-        data () {
+        data() {
             return {
                 content: {
                     link_1: 'Тесты',
