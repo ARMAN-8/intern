@@ -39,6 +39,16 @@ const routes = [
         name: 'Completed',
         component: () => import('../views/Completed')
     },
+    {
+        path: '/video-lessons',
+        name: 'videoLessons',
+        component: () => import('../views/videoLessons')
+    },
+    {
+        path: '/tariffs',
+        name: 'tariffs',
+        component: () => import('../views/tariffs')
+    },
 ];
 
 const router = new VueRouter({

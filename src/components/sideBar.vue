@@ -11,16 +11,16 @@
                     </div>-->
                     <ul class="m-8">
                         <li class="sideBarMenu flex items-center m-8">
-                            <router-link  class="sideBarText" to="/test">
+                            <router-link  class="sideBarText" to="/Block">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_1 }}</span>
                             </router-link>
                         </li>
                         <li class="sideBarMenu flex items-center m-8">
-                            <a href="#" class="sideBarText">
+                            <router-link class="sideBarText" to="/tariffs">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_2 }}</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li class="sideBarMenu flex items-center m-8">
                             <router-link class="sideBarText" to="/account-settings">
@@ -29,7 +29,7 @@
                             </router-link>
                         </li>
                         <li class="sideBarMenu flex items-center m-8">
-                            <router-link class="sideBarText" to="/results">
+                            <router-link class="sideBarText" to="/video-lessons">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_4 }}</span>
                             </router-link>
