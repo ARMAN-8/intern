@@ -15,6 +15,26 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/NotFound')
     },
     {
+        path: '/signIn',
+        name: 'signIn',
+        component: () => import('../views/signIn')
+    },
+    {
+        path: '/registration',
+        name: 'registration',
+        component: () => import('../views/registration')
+    },
+    {
+        path: '/forget_password',
+        name: 'forget_password',
+        component: () => import('../views/forget_password')
+    },
+    {
+        path: '/verify_link',
+        name: 'verify_link',
+        component: () => import('../views/verify_link')
+    },
+    {
         path: '/block',
         name: 'Block',
         component: () => import(/* webpackChunkName: "about" */ '../views/Block')
