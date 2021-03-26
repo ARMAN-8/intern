@@ -1,5 +1,6 @@
 <template>
     <div class="home h-screen">
+        <particles-bg class="bor" type="custom" :bg="true" style="top: 0; left: 0;"/>
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <navBar/>
             <div class="home-content lg:mt-40">
@@ -161,14 +162,30 @@
 
 <script>
     import navBar from "../components/navBar";
+    import { ParticlesBg } from 'particles-bg-vue';
 
     export default {
         name: 'Home',
         components: {
-            navBar
+            navBar,
+            ParticlesBg
         },
         data() {
             return {
+                config: {
+                    num: [4, 7],
+                    rps: 0.1,
+                    radius: [5, 40],
+                    life: [1.5, 3],
+                    v: [2, 3],
+                    tha: [-30, 30],
+                    body: `url('../assets/sun_middle.png');`,
+                    alpha: [0.6, 0],
+                    scale: [0.1, 0.4],
+                    position: "all",
+                    cross: "dead",
+                    random: 15
+                },
                 main: {
                     title: 'INTERN TEST',
                     paragraph: 'Сервис онлайн-оценки персонала для малого и среднего бизнеса. Повышает скорость и точность найма.',
