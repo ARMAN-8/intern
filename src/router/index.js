@@ -49,6 +49,11 @@ const routes = [
         name: 'tariffs',
         component: () => import('../views/tariffs')
     },
+    {
+        path: '/test-registration',
+        name: 'test-registration',
+        component: () => import('../views/test-registration')
+    },
 ];
 
 const router = new VueRouter({

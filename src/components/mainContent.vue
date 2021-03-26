@@ -15,7 +15,7 @@
                             <div>
                                 <label>
                                     <input placeholder="Введите почту тестируемого"
-                                            class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
+                                            class="bg-gray-200 border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
                                 </label>
                             </div>
                         </div>
@@ -80,7 +80,12 @@
                     </div>
                 </div>
             </div>
-
+            <div class="mt-6 flex justify-end">
+                <label>
+                    <input placeholder="Поиск"
+                           class="bg-gray-200 border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
+                </label>
+            </div>
 
             <!---->
             <div class="warningCard shadow-lg bg-white rounded-lg overflow-auto mt-12">
@@ -180,7 +185,7 @@
                                         <div class="flex items-center mt-12">
                                             <label class="mx-2 w-5/6 flex">
                                                 <input placeholder="Введите сообщение..."
-                                                       class="w-full border border-gray-400 rounded-lg border-transparent py-2 px-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
+                                                       class="bg-gray-200 w-full border border-gray-400 rounded-lg border-transparent py-2 px-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
                                             </label>
                                             <a href="#" class="mx-2 w-1/6">
                                                 <img src="../assets/paper_plane.png" alt="">
