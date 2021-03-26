@@ -179,7 +179,7 @@
                     life: [1.5, 3],
                     v: [2, 3],
                     tha: [-30, 30],
-                    body: `url('../assets/sun_middle.png');`,
+                    body: `url('../assets/sun_middle.png')`,
                     alpha: [0.6, 0],
                     scale: [0.1, 0.4],
                     position: "all",
