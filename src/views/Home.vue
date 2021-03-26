@@ -93,7 +93,7 @@
             </div>
         </div>
         <div>
-            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bgAqua rounded-lg">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bgAqua rounded-lg pb-12">
                 <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 justify-content-center my-8 py-12">
                     <div>
                         <div>
@@ -112,16 +112,48 @@
                         <div class="font-bold mt-12">
                             {{ main_5.registration.subtitle }}
                         </div>
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="flex justify-center">
-                        <button class="">
-                            {{ main_5.registration.button }}
-                        </button>
+                        <div class="grid grid-flow-col-2 grid-cols grid-rows-3 gap-8 text-black mt-12">
+                            <div class="w-full">
+                                <div>
+                                    <label>
+                                        <input placeholder="  Имя" type="text"
+                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div>
+                                    <label>
+                                        <input placeholder="  Фамилия" type="text"
+                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid-3 col-span-2">
+                                <label>
+                                    <input placeholder="  Почта" type="email"
+                                           class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                </label>
+                            </div>
+                            <div class="grid-3 col-span-2">
+                                <label>
+                                    <input placeholder="  Пароль" type="password"
+                                           class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <button class="bg-yellow-300 hover:bg-yellow-400 rounded-full py-2 px-8 font-medium focus:outline-none">
+                                {{ main_5.registration.button }}
+                            </button>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div>
+            <div class="text-center py-12 mt-12 font-medium">
+                {{ new Date().getFullYear() }}© {{ copyright }}
             </div>
         </div>
     </div>
@@ -173,6 +205,7 @@
                     {message: 'Интеллект'},
                     {message: 'Вовлеченность'},
                 ],
+                copyright: `Все права защищены.`,
             }
         }
     }
