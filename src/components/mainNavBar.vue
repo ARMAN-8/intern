@@ -3,12 +3,6 @@
         <div class="bg-gray-200 w-full p-2">
             <div class="lg:ml-80 md:ml-0 px-4">
                 <div class="flex justify-between p-4">
-                    <div class="absolute left-0 flex items-center md:hidden sm:hidden z-0">
-                        <!-- Mobile menu button-->
-                        <button class="ml-2 mt-2 focus:outline-none bars">
-                            <img src="../assets/bar.png" alt="">
-                        </button>
-                    </div>
                     <div>
                         <router-link to="/NotFound">
                             <span class="text-2xl font-bold">

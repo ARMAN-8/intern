@@ -1,7 +1,7 @@
 <template>
     <div class="fixed">
         <div class="sideBar">
-            <div class=" min-h-screen lg:w-80 md:w-0 sm:w-0">
+            <div class="min-h-screen lg:w-80 md:w-0 sm:w-0">
                 <div class="flex items-center justify-center py-8">
                     <img src="../assets/INTERN-TEST.png" alt="">
                 </div>
@@ -10,26 +10,26 @@
                         <img src="../assets/active.png" alt="">
                     </div>-->
                     <ul class="m-8">
-                        <li class="sideBarMenu flex items-center m-8">
-                            <router-link  class="sideBarText" to="/Block">
+                        <li class="sideBarMenu">
+                            <router-link class="sideBarText" to="/Block" v-bind:class="{ active: isActive }">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_1 }}</span>
                             </router-link>
                         </li>
-                        <li class="sideBarMenu flex items-center m-8">
-                            <router-link class="sideBarText" to="/tariffs">
+                        <li class="sideBarMenu">
+                            <router-link class="sideBarText" to="/tariffs" v-bind:class="{ active: isActive }">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_2 }}</span>
                             </router-link>
                         </li>
-                        <li class="sideBarMenu flex items-center m-8">
-                            <router-link class="sideBarText" to="/account-settings">
+                        <li class="sideBarMenu">
+                            <router-link class="sideBarText" to="/account-settings" v-bind:class="{ active: isActive }">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_3 }}</span>
                             </router-link>
                         </li>
-                        <li class="sideBarMenu flex items-center m-8">
-                            <router-link class="sideBarText" to="/video-lessons">
+                        <li class="sideBarMenu">
+                            <router-link class="sideBarText" to="/video-lessons" v-bind:class="{ active: isActive }">
                                 <img src="../assets/tests.png" alt="">
                                 <span class="ml-4">{{ content.link_4 }}</span>
                             </router-link>
@@ -64,5 +64,6 @@
     }
     .sideBarMenu {
         color: black;
+        @apply  flex items-center m-8 w-full
     }
 </style>
