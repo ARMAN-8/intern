@@ -6,36 +6,36 @@
                 <div>
                     <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 justify-content-center my-8 py-12">
                         <div class="">
-                            <img src="../assets/signIn.png" alt=""/>
+                            <img src="../assets/registration.png" alt=""/>
                         </div>
-                        <div class="lg:pt-36 md:pt-12 space-y-6 text-center">
-                            <div class="lg:text-4xl md:text-3xl sm:text-2xl font-bold lg:mt-12">
+                        <div class="lg:pt-36 md:pt-12 space-y-8 text-center">
+                            <div class="font-normal text-4xl">
                                 {{ signIn.title }}
                             </div>
-                            <div class="font-medium">
+                            <div class="font-normal text-2xl">
                                 {{ signIn.subtitle }}
                             </div>
                             <div class="space-y-6">
                                 <div>
                                     <label>
                                         <input placeholder="  Почта" type="email"
-                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                               class="formInput">
                                     </label>
                                 </div>
                                 <div>
                                     <label>
                                         <input placeholder="  Пароль" type="password"
-                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                               class="formInput">
                                     </label>
                                 </div>
                             </div>
                             <div class="flex justify-end">
-                                <router-link to="/forget_password">
+                                <router-link class="text-lg font-normal" to="/forget_password">
                                     {{ signIn.forgetPassword }}
                                 </router-link>
                             </div>
                             <div class="text-center">
-                                <button class="bg-yellow-300 hover:bg-yellow-400 rounded-full py-2 px-8 font-medium focus:outline-none">
+                                <button class="formButton">
                                     {{ signIn.signIn_btn }}
                                 </button>
                             </div>
