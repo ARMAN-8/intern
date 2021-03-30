@@ -4,11 +4,11 @@
             <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <navBar/>
                 <div class="space-y-8">
-                    <div class="text-center font-medium lg:text-4xl md:text-3xl sm:text-2xl mt-64">
+                    <div class="text-center font-medium lg:text-5xl md:text-3xl text-2xl mt-64">
                         {{ title }}
                     </div>
                     <div class="text-center">
-                        <router-link class="text-blue-500 font-medium" to="/signIn">
+                        <router-link class="text-blue-500 font-medium lg:text-2xl md:text-2xl text-xl" to="/signIn">
                             {{ signIn }}
                         </router-link>
                     </div>
