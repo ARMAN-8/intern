@@ -114,6 +114,8 @@ module.exports = {
       xl: '0.75rem',
       '2xl': '1rem',
       '3xl': '1.5rem',
+      '13': '0.8125rem',
+      '62': '3.875rem',
       full: '9999px',
     },
     borderWidth: {
@@ -163,6 +165,9 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      body: [
+          'Lato'
+      ],
       sans: [
         'ui-sans-serif',
         'system-ui',
