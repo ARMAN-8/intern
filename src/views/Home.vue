@@ -1,25 +1,25 @@
 <template>
-    <div class="home h-screen">
+    <div class="home h-screen font-roboto">
         <particles-bg num="1"  type="color" :config="config" :bg="true"/>
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <navBar/>
-            <div class="home-content lg:mt-40">
+            <div class="home-content lg:mt-40 mt-20">
                 <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-content-center my-8">
                     <div class="">
-                        <div class="lg:text-4xl md:text-3xl sm:text-2xl font-black">
+                        <div class="lg:text-6xl md:text-4xl text-4xl font-black font-body">
                             {{ main.title }}
                         </div>
-                        <div class="mt-8 font-semibold text-medium">
+                        <div class="mt-8 font-bold lg:text-2xl md:text-xl text-xl">
                             {{ main.paragraph }}
                         </div>
-                        <div class="mt-8 font-semibold text-medium">
+                        <div class="mt-8 font-bold lg:text-2xl md:text-xl text-xl">
                             {{ main.paragraph_2 }}
                         </div>
-                        <div class="mt-8 font-semibold text-medium">
+                        <div class="mt-8 font-bold lg:text-2xl md:text-xl text-xl">
                         </div>
                         <div>
                             <ul>
-                                <li class="lg:pb-6 font-semibold text-medium" v-for="item in items" :key="item.message">
+                                <li class="mt-8 font-bold lg:text-2xl md:text-xl text-xl" v-for="item in items" :key="item.message">
                                     {{ item.message }}
                                 </li>
                             </ul>
@@ -41,10 +41,10 @@
                         <div class="flex justify-center">
                             <img src="../assets/check.png" alt=""/>
                         </div>
-                        <div class="font-extrabold">
+                        <div class="font-bold lg:text-2xl md:text-xl text-xl">
                             {{ main_row_1.col_2.title }}
                         </div>
-                        <div class="font-medium">
+                        <div class="font-bold">
                             {{ main_row_1.col_2.description }}
                         </div>
                     </div>
@@ -52,10 +52,10 @@
                         <div class="flex justify-center">
                             <img src="../assets/check.png" alt=""/>
                         </div>
-                        <div class="font-extrabold">
+                        <div class="font-bold lg:text-2xl md:text-xl text-xl">
                             {{ main_row_1.col_3.title }}
                         </div>
-                        <div class="font-medium">
+                        <div class="font-bold">
                             {{ main_row_1.col_3.description }}
                         </div>
                     </div>
@@ -69,16 +69,16 @@
                         <img src="../assets/coming_soon.png" alt=""/>
                     </div>
                     <div class="lg:pt-36 md:pt-12 space-y-6">
-                        <div class="lg:text-4xl md:text-3xl sm:text-2xl font-bold lg:mt-12">
+                        <div class="lg:text-6xl md:text-4xl text-4xl font-normal font-body">
                             {{ main_3.title }}
                         </div>
-                        <div>
+                        <div class="font-normal text-2xl">
                             {{ main_3.paragraph_1 }}
                         </div>
-                        <div>
+                        <div class="font-normal text-2xl">
                             {{ main_3.paragraph_2 }}
                         </div>
-                        <div>
+                        <div class="font-normal text-2xl">
                             {{ main_3.paragraph_3 }}
                         </div>
                     </div>
@@ -94,7 +94,7 @@
             </div>
         </div>
         <div>
-            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bgAqua rounded-lg pb-12">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bgAqua rounded-13 pb-12">
                 <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 justify-content-center my-8 py-12">
                     <div>
                         <div>
@@ -110,7 +110,7 @@
                         <div class="lg:text-4xl md:text-3xl sm:text-2xl font-bold lg:mt-12">
                             {{ main_5.registration.title }}
                         </div>
-                        <div class="font-bold mt-12">
+                        <div class="font-normal text-2xl mt-12">
                             {{ main_5.registration.subtitle }}
                         </div>
                         <div class="grid grid-flow-col-2 grid-cols grid-rows-3 gap-8 text-black mt-12">
@@ -118,7 +118,7 @@
                                 <div>
                                     <label>
                                         <input placeholder="  Имя" type="text"
-                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                               class="formInput">
                                     </label>
                                 </div>
                             </div>
@@ -126,25 +126,25 @@
                                 <div>
                                     <label>
                                         <input placeholder="  Фамилия" type="text"
-                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                               class="formInput">
                                     </label>
                                 </div>
                             </div>
                             <div class="grid-3 col-span-2">
                                 <label>
                                     <input placeholder="  Почта" type="email"
-                                           class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                           class="formInput">
                                 </label>
                             </div>
                             <div class="grid-3 col-span-2">
                                 <label>
                                     <input placeholder="  Пароль" type="password"
-                                           class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                           class="formInput">
                                 </label>
                             </div>
                         </div>
                         <div class="text-center mt-12">
-                            <button class="bg-yellow-300 hover:bg-yellow-400 rounded-full py-2 px-8 font-medium focus:outline-none">
+                            <button class="formButton">
                                 {{ main_5.registration.button }}
                             </button>
                         </div>
@@ -153,7 +153,7 @@
             </div>
         </div>
         <div>
-            <div class="text-center py-12 mt-12 font-medium">
+            <div class="text-center py-12 mt-12 text-lg font-normal">
                 {{ new Date().getFullYear() }}© {{ copyright }}
             </div>
         </div>
@@ -201,7 +201,7 @@
                     under_img_title: `Создайте свой тестовый аккаунт и получите 5 тестов`,
                     registration: {
                         title: `Регистрация`,
-                        subtitle: `Мы ради вас видить на нашей платформе`,
+                        subtitle: `Мы рады вас видить на нашей платформе`,
                         button: `Получить демо`
                     }
                 },
@@ -228,5 +228,14 @@
     }
     .bgAqua {
         background-color: #5FE2FF;
+    }
+    .formInput {
+        @apply border border-black rounded-62 py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent;
+    }
+    .formInput::placeholder {
+        color: #000;
+    }
+    .formButton {
+        @apply bg-yellow-1000 hover:bg-yellow-400 rounded-62 py-2 px-8 font-extrabold text-lg focus:outline-none
     }
 </style>

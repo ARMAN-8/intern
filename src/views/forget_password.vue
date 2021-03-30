@@ -8,23 +8,23 @@
                         <div class="">
                             <img src="../assets/forget_password.png" alt=""/>
                         </div>
-                        <div class="lg:pt-36 md:pt-12 space-y-6 text-center">
-                            <div class="lg:text-4xl md:text-3xl sm:text-2xl font-bold lg:mt-12">
+                        <div class="lg:pt-36 md:pt-12 space-y-8 text-center">
+                            <div class="font-normal text-4xl">
                                 {{ forget_password.title }}
                             </div>
-                            <div class="font-medium">
+                            <div class="font-normal text-2xl">
                                 {{ forget_password.subtitle }}
                             </div>
                             <div class="space-y-6">
                                 <div>
                                     <label>
                                         <input placeholder="  Почта" type="email"
-                                               class="border border-black rounded-full py-2 px-2 w-full focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent bg-transparent">
+                                               class="formInput">
                                     </label>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button class="bg-yellow-300 hover:bg-yellow-400 rounded-full py-2 px-8 font-medium focus:outline-none">
+                                <button class="formButton">
                                     {{ forget_password.registration_btn }}
                                 </button>
                             </div>
