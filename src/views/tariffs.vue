@@ -4,172 +4,108 @@
         <mainNavBar/>
         <div class="lg:ml-80 md:ml-0 my-8 lg:mx-8 md:mx-8 sm:mx-2 lg:px-8 md:px-4 sm:px-2">
             <!--Тарифы-->
-            <div class="grid grid-flow-col-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
+            <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
                 <div class="grid-1">
-                    <div class="bg-blue-500 text-white p-4 rounded-lg">
-                        <div class="text-2xl font-bold mb-8">
-                            Пакет мини
+                    <div class="priceCard">
+                        <div class="text-4xl font-bold font-body mb-8">
+                            {{ tariff_1.title }}
                         </div>
                         <div class="font-medium">
-                            100 тестирований
+                            {{ tariff_1.tests_100 }}
                         </div>
                         <div class="flex items-center mb-8">
                             <div class="text-2xl font-bold">
-                                19 800 Тг
+                                {{ tariff_1.price }}
                             </div>
                             <div class="font-medium ml-2">
-                                198 тг/тест
+                                {{ tariff_1.test_piece }}
                             </div>
                         </div>
-                        <div class="mb-8">
-                            Количество тестов в тарифе <br>
-                            рассчитано для найма 1-3 сотрудников
+                        <div class="mb-8 font-bold">
+                            {{ tariff_1.description }}
                         </div>
                         <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                Купить
+                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                {{ tariff_1.buyButton }}
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="grid-2">
-                    <div class="grid-1">
-                        <div class="bg-blue-500 text-white p-4 rounded-lg">
-                            <div class="text-2xl font-bold mb-8">
-                                Пакет мини
-                            </div>
-                            <div class="font-medium">
-                                100 тестирований
-                            </div>
-                            <div class="flex items-center mb-8">
-                                <div class="text-2xl font-bold">
-                                    19 800 Тг
-                                </div>
-                                <div class="font-medium ml-2">
-                                    198 тг/тест
-                                </div>
-                            </div>
-                            <div class="mb-8">
-                                Количество тестов в тарифе <br>
-                                рассчитано для найма 1-3 сотрудников
-                            </div>
-                            <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                    Купить
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-3">
-                    <div class="bg-blue-500 text-white p-4 rounded-lg">
-                        <div class="text-2xl font-bold mb-8">
-                            Пакет мини
+                <div class="grid-1">
+                    <div class="priceCard">
+                        <div class="text-4xl font-bold font-body mb-8">
+                            {{ tariff_1.title }}
                         </div>
                         <div class="font-medium">
-                            100 тестирований
+                            {{ tariff_1.tests_100 }}
                         </div>
                         <div class="flex items-center mb-8">
                             <div class="text-2xl font-bold">
-                                19 800 Тг
+                                {{ tariff_1.price }}
                             </div>
                             <div class="font-medium ml-2">
-                                198 тг/тест
+                                {{ tariff_1.test_piece }}
                             </div>
                         </div>
-                        <div class="mb-8">
-                            Количество тестов в тарифе <br>
-                            рассчитано для найма 1-3 сотрудников
+                        <div class="mb-8 font-bold">
+                            {{ tariff_1.description }}
                         </div>
                         <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                Купить
+                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                {{ tariff_1.buyButton }}
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="grid-4">
-                    <div class="grid-1">
-                        <div class="bg-blue-500 text-white p-4 rounded-lg">
-                            <div class="text-2xl font-bold mb-8">
-                                Пакет мини
-                            </div>
-                            <div class="font-medium">
-                                100 тестирований
-                            </div>
-                            <div class="flex items-center mb-8">
-                                <div class="text-2xl font-bold">
-                                    19 800 Тг
-                                </div>
-                                <div class="font-medium ml-2">
-                                    198 тг/тест
-                                </div>
-                            </div>
-                            <div class="mb-8">
-                                Количество тестов в тарифе <br>
-                                рассчитано для найма 1-3 сотрудников
-                            </div>
-                            <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                    Купить
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-5">
-                    <div class="bg-blue-500 text-white p-4 rounded-lg">
-                        <div class="text-2xl font-bold mb-8">
-                            Пакет мини
+                <div class="grid-1">
+                    <div class="priceCard">
+                        <div class="text-4xl font-bold font-body mb-8">
+                            {{ tariff_1.title }}
                         </div>
                         <div class="font-medium">
-                            100 тестирований
+                            {{ tariff_1.tests_100 }}
                         </div>
                         <div class="flex items-center mb-8">
                             <div class="text-2xl font-bold">
-                                19 800 Тг
+                                {{ tariff_1.price }}
                             </div>
                             <div class="font-medium ml-2">
-                                198 тг/тест
+                                {{ tariff_1.test_piece }}
                             </div>
                         </div>
-                        <div class="mb-8">
-                            Количество тестов в тарифе <br>
-                            рассчитано для найма 1-3 сотрудников
+                        <div class="mb-8 font-bold">
+                            {{ tariff_1.description }}
                         </div>
                         <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                Купить
+                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                {{ tariff_1.buyButton }}
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="grid-6">
-                    <div class="grid-1">
-                        <div class="bg-blue-500 text-white p-4 rounded-lg">
-                            <div class="text-2xl font-bold mb-8">
-                                Пакет мини
+                <div class="grid-1">
+                    <div class="priceCard">
+                        <div class="text-4xl font-bold font-body mb-8">
+                            {{ tariff_1.title }}
+                        </div>
+                        <div class="font-medium">
+                            {{ tariff_1.tests_100 }}
+                        </div>
+                        <div class="flex items-center mb-8">
+                            <div class="text-2xl font-bold">
+                                {{ tariff_1.price }}
                             </div>
-                            <div class="font-medium">
-                                100 тестирований
+                            <div class="font-medium ml-2">
+                                {{ tariff_1.test_piece }}
                             </div>
-                            <div class="flex items-center mb-8">
-                                <div class="text-2xl font-bold">
-                                    19 800 Тг
-                                </div>
-                                <div class="font-medium ml-2">
-                                    198 тг/тест
-                                </div>
-                            </div>
-                            <div class="mb-8">
-                                Количество тестов в тарифе <br>
-                                рассчитано для найма 1-3 сотрудников
-                            </div>
-                            <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                    Купить
-                                </button>
-                            </div>
+                        </div>
+                        <div class="mb-8 font-bold">
+                            {{ tariff_1.description }}
+                        </div>
+                        <div>
+                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                {{ tariff_1.buyButton }}
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -189,8 +125,24 @@
         },
         data() {
             return {
-
+                tariff_1: {
+                    title: `Пакет Мини`,
+                    tests_100: `100 тестирований`,
+                    price: `19 800 Тг`,
+                    test_piece: `19 800 тг/тест`,
+                    description: `Количество тестов в тарифе рассчитано для найма 1-3 сотрудников.`,
+                    buyButton: `Купить`
+                }
             }
         }
     }
 </script>
+<style>
+    .priceCard {
+        background: #2578C5;
+        @apply text-white p-8 rounded-13 shadow-lg ;
+    }
+    .priceCard:hover {
+        @apply m-2
+    }
+</style>
