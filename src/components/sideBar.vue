@@ -1,7 +1,7 @@
 <template>
     <div class="fixed">
         <div class="sideBar" id="sidebar">
-            <div class="min-h-screen lg:w-80 md:w-0 sm:w-0">
+            <div class="min-h-screen lg:w-80 md:w-0 w-0">
                 <div class="flex items-center justify-center py-8">
                     <img src="../assets/INTERN-TEST.png" alt="">
                 </div>
@@ -9,30 +9,38 @@
                     <!--<div>
                         <img src="../assets/active.png" alt="">
                     </div>-->
-                    <ul class="bor">
-                        <li class="sideBarMenu m-8 bor">
+                    <ul class="">
+                        <li class="sideBarMenu m-8">
                             <router-link class="sideBarText" exact to="/Block">
                                 <!--<img src="../assets/tests.png" alt="">-->
-                                <i class="fas fa-shopping-cart"/>
+                                <span class="pl-16">
+                                    <font-awesome-icon icon="th-large"/>
                                 <span class="ml-4">{{ content.link_1 }}</span>
+                                </span>
                             </router-link>
                         </li>
                         <li class="sideBarMenu">
                             <router-link class="sideBarText" exact to="/tariffs">
-                                <img src="../assets/tests.png" alt="">
-                                <span class="ml-4">{{ content.link_2 }}</span>
+                                <span class="pl-16">
+                                    <font-awesome-icon icon="wallet"/>
+                                    <span class="ml-4">{{ content.link_2 }}</span>
+                                </span>
                             </router-link>
                         </li>
                         <li class="sideBarMenu">
                             <router-link class="sideBarText" exact to="/account-settings">
-                                <img src="../assets/tests.png" alt="">
+                                <span class="pl-16">
+                                    <font-awesome-icon icon="user-cog"/>
                                 <span class="ml-4">{{ content.link_3 }}</span>
+                                </span>
                             </router-link>
                         </li>
                         <li class="sideBarMenu">
                             <router-link class="sideBarText" exact to="/video-lessons">
-                                <img src="../assets/tests.png" alt="">
+                                <span class="pl-16">
+                                    <font-awesome-icon icon="chalkboard-teacher"/>
                                 <span class="ml-4">{{ content.link_4 }}</span>
+                                </span>
                             </router-link>
                         </li>
                     </ul>
@@ -70,7 +78,14 @@
     #sidebar a {
         color: #000;
     }
-    #sidebar a.router-link-active {
+    /*#sidebar a.router-link-active {
         color: #fff;
+        @apply border-l border-blue-400 ;
+    }*/
+    #sidebar ul li a.router-link-active {
+        color: #fff;
+        @apply py-2;
+        background: url("../assets/oval.png")left no-repeat;
+        margin-right: 10px;
     }
 </style>
