@@ -1,7 +1,7 @@
 <template>
     <div class="home h-screen font-roboto">
         <particles-bg num="1"  type="color" :config="config" :bg="true"/>
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 min-h-screen">
             <navBar/>
             <div class="home-content lg:mt-40 mt-20">
                 <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-content-center my-8">
@@ -31,20 +31,20 @@
                 </div>
             </div>
         </div>
-        <div class="bgAqua">
+        <div class="bgAqua mb-24">
             <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div class="grid grid-flow-cols-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 justify-content-center my-8 py-12">
-                    <div class="lg:text-4xl md:text-3xl sm:text-2xl font-black lg:mt-12">
+                    <div class="lg:text-4xl md:text-3xl sm:text-2xl font-black lg:mt-12 flex items-center">
                         {{ main_row_1.col_1 }}
                     </div>
                     <div class="space-y-6">
                         <div class="flex justify-center">
                             <img src="../assets/check.png" alt=""/>
                         </div>
-                        <div class="font-bold lg:text-2xl md:text-xl text-xl">
+                        <div class="font-bold lg:text-3xl md:text-xl text-xl">
                             {{ main_row_1.col_2.title }}
                         </div>
-                        <div class="font-bold">
+                        <div class="font-bold lg:text-2xl md:text-xl text-xl">
                             {{ main_row_1.col_2.description }}
                         </div>
                     </div>
@@ -52,10 +52,10 @@
                         <div class="flex justify-center">
                             <img src="../assets/check.png" alt=""/>
                         </div>
-                        <div class="font-bold lg:text-2xl md:text-xl text-xl">
+                        <div class="font-bold lg:text-3xl md:text-xl text-xl">
                             {{ main_row_1.col_3.title }}
                         </div>
-                        <div class="font-bold">
+                        <div class="font-bold lg:text-2xl md:text-xl text-xl">
                             {{ main_row_1.col_3.description }}
                         </div>
                     </div>
@@ -86,11 +86,29 @@
             </div>
         </div>
         <div>
-            <div class="w-full bor">
-                <iframe class="w-full h-screen" src="https://www.youtube.com/embed/Md-6tAACnss"
+            <div class="w-full">
+                <div class="oleg">
+                    <div class="relative">
+                        <img src="../assets/exam.jpg" alt=""/>
+                        <div class="absolute left-0 bottom-96">
+                            <div class="flex items-center">
+                                <div class="text-6xl font-black bor top-10">
+                                    Посмотрите видео
+                                </div>
+                                <div>
+                                    <svg class="w-16 h-16 ml-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<iframe class="w-full h-screen" src="https://www.youtube.com/embed/Md-6tAACnss"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe>-->
             </div>
         </div>
         <div>
@@ -154,7 +172,7 @@
         </div>
         <div>
             <div class="text-center py-12 mt-12 text-lg font-normal">
-                {{ new Date().getFullYear() }}© {{ copyright }}
+                ©{{ new Date().getFullYear() }} {{ copyright }}
             </div>
         </div>
     </div>

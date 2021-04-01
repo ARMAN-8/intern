@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div class="bg-gray-200 w-full p-2">
-            <div class="lg:ml-80 md:ml-0 px-4">
+    <div class="bor w-full">
+        <div class="flex-1 bg-gray-200 p-2">
+            <div class="px-4">
                 <div class="flex justify-between p-4">
                     <div>
                         <router-link to="/NotFound">
@@ -34,7 +34,12 @@
                     logOut: 'Выйти',
                 }
             }
-        }
+        },
+        methods: {
+            mySideBar: function () {
+
+            }
+        },
     }
     /*
     let bars = document.querySelector('.bars');

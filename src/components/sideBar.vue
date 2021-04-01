@@ -1,6 +1,6 @@
 <template>
     <div class="fixed">
-        <div class="sideBar" id="sidebar">
+        <div class="sideBar">
             <div class="min-h-screen lg:w-80 md:w-0 w-0">
                 <div class="flex items-center justify-center py-8">
                     <img src="../assets/INTERN-TEST.png" alt="">
