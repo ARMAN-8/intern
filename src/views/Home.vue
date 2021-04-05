@@ -254,35 +254,7 @@
                 copyright: `Все права защищены.`,
             }
         },
-        mounted() {
-            // const modalBtn = document.querySelector('[data-modal]'),
-            //       modal = document.querySelector('.modal'),
-            //       modalCloseBtn = document.querySelector('[data-close]');
-            //
-            // modalBtn.addEventListener('click', () => {
-            //     modal.classList.add('show');
-            //     modal.classList.add('hide');
-            //     alert('hferui');
-            //     document.body.style.overflow = 'hidden';
-            // });
-            // modalCloseBtn.addEventListener('click', () => {
-            //     modal.classList.add('hide');
-            //     modal.classList.add('show');
-            //     document.body.style.overflow = '';
-            // });
-            const modalBtn = document.querySelector('#modalBtn'),
-                  modal = document.querySelector('#modal'),
-                  modalCloseBtn = document.querySelector('#modalCloseBtn');
 
-            modalBtn.addEventListener('click', () => {
-                modal.classList.add('show');
-                modal.classList.remove('hide');
-            });
-            modalCloseBtn.addEventListener('click', () => {
-                modal.classList.add('show');
-                modal.classList.remove('hide');
-            });
-        }
     }
 </script>
 <style>
@@ -306,5 +278,8 @@
     }
     .formButton {
         @apply bg-yellow-1000 hover:bg-yellow-400 rounded-62 py-2 px-8 font-extrabold text-lg focus:outline-none
+    }
+    .bg-yellow-1000 {
+        background: #FFCC00;
     }
 </style>

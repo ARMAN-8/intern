@@ -69,6 +69,7 @@
         </div>
         <!--content-->
         <mainNavBar class="hidden lg:block"/>
+
     </div>
 </template>
 <script>
