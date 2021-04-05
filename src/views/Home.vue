@@ -92,14 +92,36 @@
                         <img src="../assets/exam.jpg" alt=""/>
                         <div class="absolute left-0 bottom-96">
                             <div class="flex items-center">
-                                <div class="text-6xl font-black bor top-10">
+                                <div class="text-6xl font-black inset-0 text-white">
                                     Посмотрите видео
                                 </div>
                                 <div>
-                                    <svg class="w-16 h-16 ml-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                                    <button class="focus:outline-none" data-modal>
+                                        <svg class="w-16 h-16 ml-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div id="modal" class="modal bg-blue-300 m-8 hidden">
+                                    <div class="flex justify-end">
+                                        <button id="modalCloseBtn" class="focus:outline-none">
+                                            <span class="m-4 text-4xl">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="content p-4">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, expedita.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, nihil!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, nihil!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, nihil!
+                                    </div>
+                                </div>
+                                <div>
+                                    <button id="modalBtn" class="modalBtn">
+                                        Button
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -231,6 +253,35 @@
                 ],
                 copyright: `Все права защищены.`,
             }
+        },
+        mounted() {
+            // const modalBtn = document.querySelector('[data-modal]'),
+            //       modal = document.querySelector('.modal'),
+            //       modalCloseBtn = document.querySelector('[data-close]');
+            //
+            // modalBtn.addEventListener('click', () => {
+            //     modal.classList.add('show');
+            //     modal.classList.add('hide');
+            //     alert('hferui');
+            //     document.body.style.overflow = 'hidden';
+            // });
+            // modalCloseBtn.addEventListener('click', () => {
+            //     modal.classList.add('hide');
+            //     modal.classList.add('show');
+            //     document.body.style.overflow = '';
+            // });
+            const modalBtn = document.querySelector('#modalBtn'),
+                  modal = document.querySelector('#modal'),
+                  modalCloseBtn = document.querySelector('#modalCloseBtn');
+
+            modalBtn.addEventListener('click', () => {
+                modal.classList.add('show');
+                modal.classList.remove('hide');
+            });
+            modalCloseBtn.addEventListener('click', () => {
+                modal.classList.add('show');
+                modal.classList.remove('hide');
+            });
         }
     }
 </script>
