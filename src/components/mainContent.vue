@@ -41,11 +41,11 @@
                                 </span>
                                         <div class="grid grid-flow-col-2 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
                                             <div>
-                                                <button class="gray_button m-2" v-on:mouseenter="toggleTooltip()">
+                                                <button id="tooltipBtn" aria-describedby="tooltip" class="gray_button m-2">
                                                     Тест "Oxford"
                                                 </button>
-                                                <div class="p-4">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, maiores.
+                                                <div id="tooltip" role="tooltip">
+                                                    Тест на оценку характера и личностных качеств (80 вопросов / 40 мин)
                                                 </div>
                                             </div>
                                             <div>
@@ -211,6 +211,7 @@
 </template>
 <script>
     import mainNavBar from "./mainNavBar";
+    import { createPopper } from '@popperjs/core';
     export default {
         name: 'mainContent',
         components: {
@@ -251,6 +252,14 @@
                 }
             };
         },
+        mounted() {
+            const tooltipBtn = document.querySelector('#tooltipBtn');
+            const tooltip = document.querySelector('#tooltip');
+
+            createPopper(tooltipBtn, tooltip, {
+                placement: 'bottom',
+            });
+        },
     }
 </script>
 <style>
@@ -285,5 +294,12 @@
     }
     .side-nav-content {
         @apply mx-4 lg:mx-10;
+    }
+    #tooltip {
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 13px;
     }
 </style>
