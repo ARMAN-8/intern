@@ -3,7 +3,7 @@
         <div class="">
             <mainNavBar/>
             <!--Отправить тест-->
-            <div class="side-nav-content">
+            <div class="side-nav-content my-12">
                 <div class="warningCard shadow-lg rounded-lg mt-12">
                     <div class="warningCardHeader p-4 font-medium rounded-t-lg">
                         {{ warningCard.title }}
@@ -11,13 +11,13 @@
                     <div class="warningCardContent px-8 py-4">
                         <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
                             <div class="flex items-center gap-4 mt-5">
-                                <div>
+                                <div class="">
                                     <img src="../assets/e-mail.png" alt="">
                                 </div>
-                                <div>
+                                <div class="">
                                     <label>
                                         <input placeholder="Введите почту тестируемого"
-                                               class="bg-gray-200 border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
+                                               class="bg-gray-200 border rounded-lg py-2 px-2 lg:w-60 md:w-60 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
                                     </label>
                                 </div>
                             </div>
@@ -91,44 +91,41 @@
                                class="bg-gray-200 border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent">
                     </label>
                 </div>
-
-                <!---->
-                <div class="warningCard shadow-lg bg-white rounded-lg overflow-auto mt-12">
-                    <table class="w-full">
-                        <thead class="warningCardHeader font-medium  rounded-t-lg">
-                        <tr>
-                            <th class="w-1/4 text-left">{{ warningTable.eMail.title }}</th>
-                            <th class="w-1/6 text-left">{{ warningTable.fullName.title }}</th>
-                            <th class="w-1/6 text-left">{{ warningTable.phoneNumber.title }}</th>
-                            <th class="w-1/6 text-left">{{ warningTable.sentBy.title }}</th>
-                            <th class="w-1/6 text-left">{{ warningTable.status.title }}</th>
-                            <th class="w-1/6 text-left">{{ warningTable.results.title }}</th>
+                <!--Table-->
+                <div class="overflow-auto mt-12 rounded-lg shadow-lg">
+                    <table class="bg-gray-50">
+                        <tr class="bg-yellow-1000">
+                            <th class="w-1/4 text-left px-8 py-4">{{ warningTable.eMail.title }}</th>
+                            <th class="w-1/6 text-left px-8 py-4">{{ warningTable.fullName.title }}</th>
+                            <th class="w-1/6 text-left px-8 py-4">{{ warningTable.phoneNumber.title }}</th>
+                            <th class="w-1/6 text-left px-8 py-4">{{ warningTable.sentBy.title }}</th>
+                            <th class="w-1/6 text-left px-8 py-4">{{ warningTable.status.title }}</th>
+                            <th class="w-1/6 text-left px-8 py-4">{{ warningTable.results.title }}</th>
                         </tr>
-                        </thead>
                         <tbody>
                         <tr>
-                            <td>{{ warningTable.eMail.content }}</td>
-                            <td>{{ warningTable.fullName.content }}</td>
-                            <td>{{ warningTable.phoneNumber.content }}</td>
-                            <td>{{ warningTable.sentBy.content }}</td>
-                            <td>{{ warningTable.status.content }}</td>
-                            <td>{{ warningTable.results.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.eMail.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.fullName.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.phoneNumber.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.sentBy.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.status.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.results.content }}</td>
                         </tr>
                         <tr>
-                            <td>{{ warningTable.eMail.content }}</td>
-                            <td/>
-                            <td/>
-                            <td/>
-                            <td>{{ warningTable.status.content }}</td>
-                            <td>{{ warningTable.results.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.eMail.content }}</td>
+                            <td class="px-8 py-4"/>
+                            <td class="px-8 py-4"/>
+                            <td class="px-8 py-4"/>
+                            <td class="px-8 py-4">{{ warningTable.status.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.results.content }}</td>
                         </tr>
                         <tr>
-                            <td>{{ warningTable.eMail.content }}</td>
-                            <td>{{ warningTable.fullName.content }}</td>
-                            <td>{{ warningTable.phoneNumber.content }}</td>
-                            <td>{{ warningTable.sentBy.content }}</td>
-                            <td>{{ warningTable.status.content }}</td>
-                            <td><router-link to="/results"><img src="../assets/pdf.png" alt=""></router-link></td>
+                            <td class="px-8 py-4">{{ warningTable.eMail.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.fullName.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.phoneNumber.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.sentBy.content }}</td>
+                            <td class="px-8 py-4">{{ warningTable.status.content }}</td>
+                            <td class="px-8 py-4"><router-link to="/results"><img src="../assets/pdf.png" alt=""></router-link></td>
                         </tr>
                         </tbody>
                     </table>
