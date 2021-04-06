@@ -12,7 +12,7 @@ const routes = [
     },
     {
         path: '*',
-        component: () => import(/* webpackChunkName: "about" */ '../views/NotFound')
+        component: () => import('../views/NotFound')
     },
     {
         path: '/signIn',
@@ -37,7 +37,7 @@ const routes = [
     {
         path: '/tests',
         name: 'tests',
-        component: () => import(/* webpackChunkName: "about" */ '../views/tests')
+        component: () => import('../views/tests')
     },
     {
         path: '/account-settings',
