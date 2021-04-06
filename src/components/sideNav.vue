@@ -9,9 +9,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
-                <!--logo-->
-                <!--<a href="#" class="block p-4 text-black font-bold">INTERN TEST</a>
-                <router-link class="p-4" to="/">Выйти</router-link>-->
             </div>
         </div>
         <!--sidebar-->
@@ -32,7 +29,7 @@
             <nav class="mt-12">
                 <ul class="">
                     <li class="sideBarMenu m-8">
-                        <router-link class="sideBarText" exact to="/Block">
+                        <router-link class="sideBarText" exact to="/tests">
                             <!--<img src="../assets/tests.png" alt="">-->
                             <span class="pl-16">
                                     <font-awesome-icon icon="th-large"/>
@@ -70,17 +67,11 @@
                 </ul>
             </nav>
         </div>
-        <!--content-->
-        <!--<mainNavBar class="hidden lg:block"/>-->
     </div>
 </template>
 <script>
-    /*import mainNavBar from "../components/mainNavBar";*/
     export default {
         name: 'sideNav',
-        components: {
-            /*mainNavBar*/
-        },
         data() {
             return {
                 content: {
@@ -127,10 +118,6 @@
     #sidebar a {
         color: #000;
     }
-    /*#sidebar a.router-link-active {
-        color: #fff;
-        @apply border-l border-blue-400 ;
-    }*/
     #sidebar ul li a.router-link-active {
         color: #fff;
         @apply py-2;
