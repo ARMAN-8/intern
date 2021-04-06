@@ -35,9 +35,9 @@ const routes = [
         component: () => import('../views/verify_link')
     },
     {
-        path: '/block',
-        name: 'Block',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Block')
+        path: '/tests',
+        name: 'tests',
+        component: () => import(/* webpackChunkName: "about" */ '../views/tests')
     },
     {
         path: '/account-settings',
