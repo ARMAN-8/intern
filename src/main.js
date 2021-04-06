@@ -5,7 +5,7 @@ import router from './router'
 import store from './store'
 import './assets/tailwind.css'
 import './assets/js/script'
-import '@popperjs/core'
+/*import '@popperjs/core'*/
 
 Vue.config.productionTip = false;
 

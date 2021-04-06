@@ -70,6 +70,11 @@ const routes = [
         component: () => import('../views/tariffs')
     },
     {
+        path: '/testing',
+        name: 'testing',
+        component: () => import('../views/testing')
+    },
+    {
         path: '/test-registration',
         name: 'test-registration',
         component: () => import('../views/test-registration')
