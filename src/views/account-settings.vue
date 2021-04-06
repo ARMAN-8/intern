@@ -1,8 +1,9 @@
 <template>
-    <div class="Block">
-        <sideBar/>
-        <mainNavBar/>
-        <div class="accountSettings lg:ml-80 md:ml-0 my-8 lg:mx-8 md:mx-8 sm:mx-2 lg:px-8 md:px-4 sm:px-2 lg:space-y-12 md:space-y-8 sm:space-y-6">
+    <div class="flex">
+        <sideNav/>
+        <div class="w-full">
+            <mainNavBar/>
+            <div class="accountSettings mx-4 lg:mx-10 my-12">
             <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
                 <div class="grid-1 space-y-6">
                     <div class="font-bold text-xl">
@@ -112,16 +113,17 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
 </template>
 <script>
-    import sideBar from "../components/sideBar";
+    import sideNav from "../components/sideNav";
     import mainNavBar from "../components/mainNavBar";
 
     export default {
         name: 'accountSettings',
         components: {
-            sideBar,
+            sideNav,
             mainNavBar,
         },
         data() {

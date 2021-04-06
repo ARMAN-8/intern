@@ -1,21 +1,19 @@
 <template>
-    <div class="Block">
-        <sideBar/>
-        <mainNavBar/>
-        <continent/>
+    <div class="flex">
+        <sideNav class="h-screen"/>
+        <mainContent class="w-full"/>
     </div>
 </template>
 <script>
-    import sideBar from "../components/sideBar";
-    import mainNavBar from "../components/mainNavBar";
-    import continent from "../components/continent";
+
+    import mainContent from "../components/mainContent";
+    import sideNav from "../components/sideNav";
 
     export default {
         name: 'Block',
         components: {
-            sideBar,
-            mainNavBar,
-            continent,
+            mainContent,
+            sideNav,
         }
     }
 </script>

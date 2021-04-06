@@ -1,111 +1,113 @@
 <template>
-    <div class="Block">
-        <sideBar/>
-        <mainNavBar/>
-        <div class="lg:ml-80 md:ml-0 my-8 lg:mx-8 md:mx-8 sm:mx-2 lg:px-8 md:px-4 sm:px-2">
+    <div class="flex">
+        <sideNav/>
+        <div class="w-full">
+            <mainNavBar/>
             <!--Тарифы-->
-            <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
-                <div class="grid-1">
-                    <div class="priceCard">
-                        <div class="text-4xl font-bold font-body mb-8">
-                            {{ tariff_1.title }}
-                        </div>
-                        <div class="font-medium">
-                            {{ tariff_1.tests_100 }}
-                        </div>
-                        <div class="flex items-center mb-8">
-                            <div class="text-2xl font-bold">
-                                {{ tariff_1.price }}
+            <div class="mx-4 lg:mx-10 my-12">
+                <div class="grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4">
+                    <div class="grid-1">
+                        <div class="priceCard">
+                            <div class="text-4xl font-bold font-body mb-8">
+                                {{ tariff_1.title }}
                             </div>
-                            <div class="font-medium ml-2">
-                                {{ tariff_1.test_piece }}
+                            <div class="font-medium">
+                                {{ tariff_1.tests_100 }}
                             </div>
-                        </div>
-                        <div class="mb-8 font-bold">
-                            {{ tariff_1.description }}
-                        </div>
-                        <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                {{ tariff_1.buyButton }}
-                            </button>
+                            <div class="flex items-center mb-8">
+                                <div class="text-2xl font-bold">
+                                    {{ tariff_1.price }}
+                                </div>
+                                <div class="font-medium ml-2">
+                                    {{ tariff_1.test_piece }}
+                                </div>
+                            </div>
+                            <div class="mb-8 font-bold">
+                                {{ tariff_1.description }}
+                            </div>
+                            <div>
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                    {{ tariff_1.buyButton }}
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-1">
-                    <div class="priceCard">
-                        <div class="text-4xl font-bold font-body mb-8">
-                            {{ tariff_1.title }}
-                        </div>
-                        <div class="font-medium">
-                            {{ tariff_1.tests_100 }}
-                        </div>
-                        <div class="flex items-center mb-8">
-                            <div class="text-2xl font-bold">
-                                {{ tariff_1.price }}
+                    <div class="grid-1">
+                        <div class="priceCard">
+                            <div class="text-4xl font-bold font-body mb-8">
+                                {{ tariff_1.title }}
                             </div>
-                            <div class="font-medium ml-2">
-                                {{ tariff_1.test_piece }}
+                            <div class="font-medium">
+                                {{ tariff_1.tests_100 }}
                             </div>
-                        </div>
-                        <div class="mb-8 font-bold">
-                            {{ tariff_1.description }}
-                        </div>
-                        <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                {{ tariff_1.buyButton }}
-                            </button>
+                            <div class="flex items-center mb-8">
+                                <div class="text-2xl font-bold">
+                                    {{ tariff_1.price }}
+                                </div>
+                                <div class="font-medium ml-2">
+                                    {{ tariff_1.test_piece }}
+                                </div>
+                            </div>
+                            <div class="mb-8 font-bold">
+                                {{ tariff_1.description }}
+                            </div>
+                            <div>
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                    {{ tariff_1.buyButton }}
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-1">
-                    <div class="priceCard">
-                        <div class="text-4xl font-bold font-body mb-8">
-                            {{ tariff_1.title }}
-                        </div>
-                        <div class="font-medium">
-                            {{ tariff_1.tests_100 }}
-                        </div>
-                        <div class="flex items-center mb-8">
-                            <div class="text-2xl font-bold">
-                                {{ tariff_1.price }}
+                    <div class="grid-1">
+                        <div class="priceCard">
+                            <div class="text-4xl font-bold font-body mb-8">
+                                {{ tariff_1.title }}
                             </div>
-                            <div class="font-medium ml-2">
-                                {{ tariff_1.test_piece }}
+                            <div class="font-medium">
+                                {{ tariff_1.tests_100 }}
                             </div>
-                        </div>
-                        <div class="mb-8 font-bold">
-                            {{ tariff_1.description }}
-                        </div>
-                        <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                {{ tariff_1.buyButton }}
-                            </button>
+                            <div class="flex items-center mb-8">
+                                <div class="text-2xl font-bold">
+                                    {{ tariff_1.price }}
+                                </div>
+                                <div class="font-medium ml-2">
+                                    {{ tariff_1.test_piece }}
+                                </div>
+                            </div>
+                            <div class="mb-8 font-bold">
+                                {{ tariff_1.description }}
+                            </div>
+                            <div>
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                    {{ tariff_1.buyButton }}
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-1">
-                    <div class="priceCard">
-                        <div class="text-4xl font-bold font-body mb-8">
-                            {{ tariff_1.title }}
-                        </div>
-                        <div class="font-medium">
-                            {{ tariff_1.tests_100 }}
-                        </div>
-                        <div class="flex items-center mb-8">
-                            <div class="text-2xl font-bold">
-                                {{ tariff_1.price }}
+                    <div class="grid-1">
+                        <div class="priceCard">
+                            <div class="text-4xl font-bold font-body mb-8">
+                                {{ tariff_1.title }}
                             </div>
-                            <div class="font-medium ml-2">
-                                {{ tariff_1.test_piece }}
+                            <div class="font-medium">
+                                {{ tariff_1.tests_100 }}
                             </div>
-                        </div>
-                        <div class="mb-8 font-bold">
-                            {{ tariff_1.description }}
-                        </div>
-                        <div>
-                            <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
-                                {{ tariff_1.buyButton }}
-                            </button>
+                            <div class="flex items-center mb-8">
+                                <div class="text-2xl font-bold">
+                                    {{ tariff_1.price }}
+                                </div>
+                                <div class="font-medium ml-2">
+                                    {{ tariff_1.test_piece }}
+                                </div>
+                            </div>
+                            <div class="mb-8 font-bold">
+                                {{ tariff_1.description }}
+                            </div>
+                            <div>
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                    {{ tariff_1.buyButton }}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,13 +116,13 @@
     </div>
 </template>
 <script>
-    import sideBar from "../components/sideBar";
+    import sideNav from "../components/sideNav";
     import mainNavBar from "../components/mainNavBar";
 
     export default {
         name: 'tariffs',
         components: {
-            sideBar,
+            sideNav,
             mainNavBar,
         },
         data() {

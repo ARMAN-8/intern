@@ -74,11 +74,6 @@ const routes = [
         name: 'test-registration',
         component: () => import('../views/test-registration')
     },
-    {
-        path: '/side-nav',
-        name: 'side-nav',
-        component: () => import('../views/side-nav')
-    },
 ];
 
 const router = new VueRouter({

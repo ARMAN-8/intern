@@ -1,20 +1,22 @@
 <template>
-    <div class="relative min-h-screen md:flex">
+    <div class="relative flex min-h-screen">
         <!--mobile menu bar-->
-        <div class="bg-gray-300 text-gray-100 flex justify-between items-center md:hidden">
-            <!--mobile menu button-->
-            <button id="mobile-menu-button" class="mobile-menu-button p-4 focus:outline-none">
-                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <!--logo-->
-            <a href="#" class="block p-4 text-black font-bold">INTERN TEST</a>
-            <router-link class="p-4" to="/">Выйти</router-link>
+        <div class="absolute">
+            <div class="text-black flex items-center mt-4">
+                <!--mobile menu button-->
+                <button id="mobile-menu-button" class="mobile-menu-button p-4 focus:outline-none">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!--logo-->
+                <!--<a href="#" class="block p-4 text-black font-bold">INTERN TEST</a>
+                <router-link class="p-4" to="/">Выйти</router-link>-->
+            </div>
         </div>
         <!--sidebar-->
-        <div id="sidebar" class="sidebar side-nav bg-yellow-1000 text-black w-72 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-            <!--mobile close button-->
+        <div id="sidebar" class="sidebar side-nav bg-yellow-1000 text-black w-72 space-y-6 py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            <!--mobile close button-times-->
             <div class="flex justify-end mx-2 md:hidden lg:hidden">
                 <button id="mobile-menu-close" class="mobile-menu-button focus:outline-none">
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -69,16 +71,15 @@
             </nav>
         </div>
         <!--content-->
-        <mainNavBar class="hidden lg:block"/>
-
+        <!--<mainNavBar class="hidden lg:block"/>-->
     </div>
 </template>
 <script>
-    import mainNavBar from "../components/mainNavBar";
+    /*import mainNavBar from "../components/mainNavBar";*/
     export default {
-        name: 'side-nav',
+        name: 'sideNav',
         components: {
-            mainNavBar
+            /*mainNavBar*/
         },
         data() {
             return {

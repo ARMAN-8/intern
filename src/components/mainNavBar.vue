@@ -1,15 +1,15 @@
 <template>
-    <div class="bor w-full">
+    <div class="w-full">
         <div class="flex-1 bg-gray-200 p-2">
             <div class="px-4">
-                <div class="flex justify-between p-4">
+                <div class="flex justify-between p-4 lg:ml-0 md:ml-0 ml-3">
                     <div>
                         <router-link to="/NotFound">
                             <span class="text-2xl font-bold">
                             {{ content.title }}
                         </span>
                         </router-link>
-                        <p class="font-medium mt-4 sm:hidden">
+                        <p class="font-medium mt-4">
                             {{ content.description }}
                         </p>
                     </div>
