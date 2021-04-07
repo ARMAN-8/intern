@@ -1,14 +1,11 @@
 <template>
-    <div class="results m-2">
-        <div class="flex justify-between items-center px-8 my-8">
-            <div>
-                <img src="../assets/i_test_logo.png" class="" alt="" style="width: 169px; height: 62px;">
-            </div>
-            <div class="font-bold">
-                Назад
-            </div>
+    <div class="results max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 min-h-screen">
+        <div class="mb-24">
+            <!--menu-->
+            <resultTop/>
         </div>
-        <div class="results text-2xl font-bold lg:mx-8 md:mx-8 sm:mx-0 lg:mt-36 md:mt-28 mt-12 space-y-12">
+        <!--content-->
+        <div class="mx-8 my-8 lg:space-y-16 md:space-y-16 space-y-8">
             <div class="card bg-white shadow-lg">
                 <div class="cardHeader bg-yellow-400 font-bold px-4 py-2 rounded-t-lg">
                     Результаты тестирования - Касымхан Али (23 года)
@@ -184,11 +181,13 @@
 </template>
 <script>
     import RadarChart from '@/components/RadarChart'
+    import resultTop from "../components/resultTop";
 
     export default {
         name: 'results',
         components: {
-            RadarChart
+            RadarChart,
+            resultTop
         },
         data() {
             return {
