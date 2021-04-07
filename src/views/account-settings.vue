@@ -9,31 +9,31 @@
                     <div class="font-bold text-xl">
                         {{ changeInfo.title }}
                     </div>
-                    <div class="font-medium grid grid-flow-col-2 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 grid-rows-1 gap-4">
-                        <div class="grid-1 space-y-4">
+                    <div class="font-medium">
+                        <div class="space-y-4">
                             <div>
                                 <label class="space-y-2">
                                     <div>{{ changeInfo.email }}</div>
                                     <input type="email"
-                                           class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                           class="ownInput">
                                 </label>
                             </div>
                             <div>
                                 <label class="space-y-2">
                                     <div>{{ changeInfo.fullName }}</div>
                                     <input type="text"
-                                           class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                           class="ownInput">
                                 </label>
                             </div>
                             <div>
                                 <label class="space-y-2">
                                     <div>{{ changeInfo.companyName }}</div>
                                     <input type="text"
-                                           class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                           class="ownInput">
                                 </label>
                             </div>
                         </div>
-                        <div class="grid-2 space-y-6">
+                        <div class="space-y-6 mt-4">
                             <div class="">
                                 <label class="space-y-2">
                                     <div>{{ changeInfo.linkActive }}</div>
@@ -67,10 +67,10 @@
                     </div>
                     <div class="font-medium space-y-4">
                         <div>
-                            <label class="space-y-2 flex flex-col lg:w-80 md:w-80">
+                            <label class="space-y-2 flex flex-col lg:w-80 md:w-80 w-auto">
                                 <div class="text-gray-300">Скопируйте реферальную ссылку</div>
                                 <input type="text" value="https://itest.kz/?r=CEO196"
-                                       class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                       class="ownInput">
                             </label>
                         </div>
                         <div>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-flow-col-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1 grid-rows-1 gap-4">
+            <div class="grid grid-flow-col-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1 grid-rows-1 gap-4  mt-12">
                 <div class="font-medium grid-1 space-y-6">
                     <div class="font-bold text-xl">
                         {{ changePassword.title }}
@@ -88,21 +88,21 @@
                         <label class="space-y-2">
                             <div>{{ changePassword.currentPassword }}</div>
                             <input type="password"
-                                   class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                   class="ownInput">
                         </label>
                     </div>
                     <div>
                         <label class="space-y-2">
                             <div>{{ changePassword.newPassword }}</div>
                             <input type="password"
-                                   class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                   class="ownInput">
                         </label>
                     </div>
                     <div>
                         <label class="space-y-2">
                             <div>{{ changePassword.repeatNewPassword }}</div>
                             <input type="password"
-                                   class="border rounded-lg py-2 px-2 w-24 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent shadow-lg">
+                                   class="ownInput">
                         </label>
                     </div>
                     <div>
@@ -154,3 +154,8 @@
         }
     }
 </script>
+<style>
+    .ownInput {
+        @apply bg-gray-200 border rounded-lg py-2 px-2 lg:w-60 md:w-60 md:w-auto focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent
+    }
+</style>
