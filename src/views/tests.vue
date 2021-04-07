@@ -110,7 +110,7 @@
                             <td class="px-8 py-4">{{ warningTable.phoneNumber.content }}</td>
                             <td class="px-8 py-4">{{ warningTable.sentBy.content }}</td>
                             <td class="px-8 py-4">{{ warningTable.status.content }}</td>
-                            <td class="px-8 py-4">{{ warningTable.results.content }}</td>
+                            <td class="px-8 py-4"><router-link to="/results"><img src="../assets/pdf.png" alt=""></router-link></td>
                         </tr>
                         <tr>
                             <td class="px-8 py-4">{{ warningTable.eMail.content }}</td>
@@ -118,7 +118,7 @@
                             <td class="px-8 py-4"/>
                             <td class="px-8 py-4"/>
                             <td class="px-8 py-4">{{ warningTable.status.content }}</td>
-                            <td class="px-8 py-4">{{ warningTable.results.content }}</td>
+                            <td class="px-8 py-4"><router-link to="/results_2"><img src="../assets/pdf.png" alt=""></router-link></td>
                         </tr>
                         <tr>
                             <td class="px-8 py-4">{{ warningTable.eMail.content }}</td>
@@ -126,7 +126,7 @@
                             <td class="px-8 py-4">{{ warningTable.phoneNumber.content }}</td>
                             <td class="px-8 py-4">{{ warningTable.sentBy.content }}</td>
                             <td class="px-8 py-4">{{ warningTable.status.content }}</td>
-                            <td class="px-8 py-4"><router-link to="/results"><img src="../assets/pdf.png" alt=""></router-link></td>
+                            <td class="px-8 py-4"><router-link to="/results_3"><img src="../assets/hPdf.png" alt=""></router-link></td>
                         </tr>
                         </tbody>
                     </table>
