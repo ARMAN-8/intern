@@ -55,6 +55,16 @@ const routes = [
         component: () => import('../views/results')
     },
     {
+        path: '/results_2',
+        name: 'results_2',
+        component: () => import('../views/results_2')
+    },
+    {
+        path: '/results_3',
+        name: 'results_3',
+        component: () => import('../views/results_3')
+    },
+    {
         path: '/Completed',
         name: 'Completed',
         component: () => import('../views/Completed')
