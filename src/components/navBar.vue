@@ -41,7 +41,7 @@
                     </div>
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-4">
-                            <router-link to="/block">
+                            <router-link to="/tests">
                                 <button class="outlineBtn mx-2">
                                     {{ signIn }}
                                 </button>
