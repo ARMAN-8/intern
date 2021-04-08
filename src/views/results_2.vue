@@ -133,7 +133,7 @@
 </script>
 <style>
     .cardHeader {
-        @apply bg-yellow-1000 font-semibold text-2xl p-4 rounded-t-lg
+        @apply bg-yellow-100 font-semibold text-2xl p-4 rounded-t-lg
     }
 
     .cardContent {

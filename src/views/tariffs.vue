@@ -26,7 +26,7 @@
                                 {{ tariff_1.description }}
                             </div>
                             <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
                                     {{ tariff_1.buyButton }}
                                 </button>
                             </div>
@@ -52,7 +52,7 @@
                                 {{ tariff_1.description }}
                             </div>
                             <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
                                     {{ tariff_1.buyButton }}
                                 </button>
                             </div>
@@ -78,7 +78,7 @@
                                 {{ tariff_1.description }}
                             </div>
                             <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
                                     {{ tariff_1.buyButton }}
                                 </button>
                             </div>
@@ -104,7 +104,7 @@
                                 {{ tariff_1.description }}
                             </div>
                             <div>
-                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-1000 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
+                                <button class="text-black px-8 py-1 bg-gray-100 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-full shadow-lg">
                                     {{ tariff_1.buyButton }}
                                 </button>
                             </div>

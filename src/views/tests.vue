@@ -6,7 +6,7 @@
             <div class="mx-4 lg:mx-10 my-12">
                 <!--Отправить тест-->
                 <div class="shadow-lg rounded-lg mt-12">
-                    <div class="bg-yellow-1000 p-4 font-medium rounded-t-lg">
+                    <div class="bg-yellow-100 p-4 font-medium rounded-t-lg">
                         {{ warningCard.title }}
                     </div>
                     <div class="px-8 py-4">
@@ -95,7 +95,7 @@
                 <!--Table-->
                 <div class="overflow-auto mt-12 rounded-lg shadow-lg">
                     <table class="bg-gray-50">
-                        <tr class="bg-yellow-1000">
+                        <tr class="bg-yellow-100">
                             <th class="w-1/4 text-left px-8 py-4">{{ warningTable.eMail.title }}</th>
                             <th class="w-1/6 text-left px-8 py-4">{{ warningTable.fullName.title }}</th>
                             <th class="w-1/6 text-left px-8 py-4">{{ warningTable.phoneNumber.title }}</th>

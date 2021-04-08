@@ -277,9 +277,9 @@
         color: #000;
     }
     .formButton {
-        @apply bg-yellow-1000 hover:bg-yellow-400 rounded-62 py-2 px-8 font-extrabold text-lg focus:outline-none
+        @apply bg-yellow-100 hover:bg-yellow-400 rounded-62 py-2 px-8 font-extrabold text-lg focus:outline-none
     }
-    .bg-yellow-1000 {
+    .bg-yellow-100 {
         background: #FFCC00;
     }
 </style>

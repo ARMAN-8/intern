@@ -13,7 +13,7 @@
             <router-link class="p-4" to="/">Выйти</router-link>
         </div>
         <!--sidebar-->
-        <div id="sidebar" class="sidebar side-nav bg-yellow-1000 text-black w-72 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+        <div id="sidebar" class="sidebar side-nav bg-yellow-100 text-black w-72 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
             <!--mobile close button-->
             <div class="flex justify-end mx-2 md:hidden lg:hidden">
                 <button id="mobile-menu-close" class="mobile-menu-button focus:outline-none">

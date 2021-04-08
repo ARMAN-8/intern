@@ -45,9 +45,9 @@
 </script>
 <style>
     .testQuestion {
-        @apply bg-yellow-1000 lg:p-12 md:p-12 p-8 font-semibold lg:text-5xl md:text-4xl text-base rounded-lg;
+        @apply bg-yellow-100 lg:p-12 md:p-12 p-8 font-semibold lg:text-5xl md:text-4xl text-base rounded-lg;
     }
     .testAnswer {
-        @apply bg-yellow-1000 lg:px-16 lg:py-6 md:px-8 md:py-4 px-4 py-2 font-semibold lg:text-5xl md:text-4xl text-base rounded-lg
+        @apply bg-yellow-100 lg:px-16 lg:py-6 md:px-8 md:py-4 px-4 py-2 font-semibold lg:text-5xl md:text-4xl text-base rounded-lg
     }
 </style>
